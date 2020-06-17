@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <style>
+    .success,
+    .error {
+      color: white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+    }
+
+    .success {
+      background: green;
+    }
+
+    .error {
+      background: red;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>Book List App</h1>
+      <form id="book-form">
+        <label for="title">Book title</label>
+        <input type="text" id="title" class="u-full-width" />
+        <label for="writer">Writer</label>
+        <input type="text" id="writer" class="u-full-width" />
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" class="u-full-width" />
+        <input
+          type="submit"
+          value="Add Book"
+          class="button-primary u-full-width"
+        />
+      </form>
+
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Writer</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody id="book-lists"></tbody>
+      </table>
+    </div>
+    <script src="appes6.js"></script>
+  </body>
+</html>
